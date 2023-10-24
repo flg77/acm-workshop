@@ -1,0 +1,7 @@
+baseURL = 'http://rhacm-ws.nomiras.com/'
+languageCode = 'en-us'
+title = 'RHACM Workshop'
+theme =  "hugo-theme-learn"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]

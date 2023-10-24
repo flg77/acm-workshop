@@ -1,0 +1,6 @@
+[submodule "rhacm-ws.nomiras.com/themes/ananke"]
+	path = rhacm-ws.nomiras.com/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "rhacm-ws.nomiras.com/themes/hugo-theme-learn"]
+	path = rhacm-ws.nomiras.com/themes/hugo-theme-learn
+	url = https://github.com/matcornic/hugo-theme-learn.git

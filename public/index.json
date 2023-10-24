@@ -1,0 +1,22 @@
+[
+{
+	"uri": "http://rhacm-ws.nomiras.com/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://rhacm-ws.nomiras.com/",
+	"title": "RHACM Workshop",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://rhacm-ws.nomiras.com/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
