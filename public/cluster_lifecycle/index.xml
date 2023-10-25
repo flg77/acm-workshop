@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cluster_lifecycles on RHACM Workshop</title>
+    <link>http://rhacm-ws.nomiras.com/cluster_lifecycle/</link>
+    <description>Recent content in Cluster_lifecycles on RHACM Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Oct 2023 22:02:41 +0200</lastBuildDate><atom:link href="http://rhacm-ws.nomiras.com/cluster_lifecycle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a new cluster</title>
+      <link>http://rhacm-ws.nomiras.com/cluster_lifecycle/new_cluster/</link>
+      <pubDate>Mon, 23 Oct 2023 22:01:13 +0200</pubDate>
+      
+      <guid>http://rhacm-ws.nomiras.com/cluster_lifecycle/new_cluster/</guid>
+      <description>Cluster Lifecycle (Cluster Lifecycle Management use case) At a high level Cluster Lifecycle management is about creating, upgrading, and destroying and importing clusters in a multi cloud environment. In the 2nd email you received from the RHDP system, it included AWS credentials, Access Key ID, Secret Access Key, and the Base DNS Domain. In order to create a new OpenShift cluster in the AWS cloud we will need these keys to create a Provider Connection.</description>
+    </item>
+    
+    <item>
+      <title>New Single Node</title>
+      <link>http://rhacm-ws.nomiras.com/cluster_lifecycle/new_sno/</link>
+      <pubDate>Mon, 23 Oct 2023 22:01:20 +0200</pubDate>
+      
+      <guid>http://rhacm-ws.nomiras.com/cluster_lifecycle/new_sno/</guid>
+      <description>Creating a Single Node Cluster (SNO) in AWS In this exercise we will show you how to create a single node cluster (OCP 4.13 or above required) in order to save some time and resources when building clusters for testing.
+** Please NOTE that provisioning SNO clusters in public clouds is not currently supported, we only support SNO clusters as bare metal, we leverage the public cloud in the example below to showcase the functionality only.</description>
+    </item>
+    
+    <item>
+      <title>Create Hosted Control Plane</title>
+      <link>http://rhacm-ws.nomiras.com/cluster_lifecycle/new_hosted_control_plane/</link>
+      <pubDate>Mon, 23 Oct 2023 22:02:41 +0200</pubDate>
+      
+      <guid>http://rhacm-ws.nomiras.com/cluster_lifecycle/new_hosted_control_plane/</guid>
+      <description>** Hosted Control Planes** is a technology preview feature, it shouldn’t be used in production clusters.
+In this section, we will enable the feature and deploy a Hosted Cluster on AWS.
+On the Clusters page, select once again Create Cluster.
+Select Amazon Web Services and Hosted mode. You’ll face the official instructions on how to create a hosted cluster.
+1 - Turn on Hosted Control Planes functionality
+The hosted control planes feature is available as a technology preview item and it’s disabled by default.</description>
+    </item>
+    
+  </channel>
+</rss>

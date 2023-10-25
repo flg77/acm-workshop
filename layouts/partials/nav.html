@@ -1,0 +1,7 @@
+<nav aria-label="Menu1 Navigation"
+<ul>
+    {{ range .Site.Menus.menu1 }}
+    <li> <a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+</ul>
+</nav>

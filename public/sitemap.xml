@@ -2,9 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://rhacm-ws.nomiras.com/categories/</loc>
+    <loc>http://rhacm-ws.nomiras.com/cluster_lifecycle/new_cluster/</loc>
+    <lastmod>2023-10-23T22:01:13+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/cluster_lifecycle/new_sno/</loc>
+    <lastmod>2023-10-23T22:01:20+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/cluster_lifecycle/new_hosted_control_plane/</loc>
+    <lastmod>2023-10-23T22:02:41+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/application_lifecycle/create_app/</loc>
+    <lastmod>2023-10-23T22:03:10+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/application_lifecycle/deploy_aap2/</loc>
+    <lastmod>2023-10-23T22:07:25+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/application_lifecycle/deploy_servicenow_dev/</loc>
+    <lastmod>2023-10-23T22:07:50+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/application_lifecycle/deploy_snow_aap_integrate/</loc>
+    <lastmod>2023-10-23T22:08:23+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/application_lifecycle/deploy_aap_creds_acm/</loc>
+    <lastmod>2023-10-23T22:10:27+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/governance/rhacm_policies/</loc>
+    <lastmod>2023-10-23T22:11:56+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/observability/grafana_integration/</loc>
+    <lastmod>2023-10-23T22:16:31+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/appendix/</loc>
+    <lastmod>2023-10-24T20:43:49+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/appendix/import_kubernetes/</loc>
+    <lastmod>2023-10-24T20:43:49+02:00</lastmod>
   </url><url>
     <loc>http://rhacm-ws.nomiras.com/</loc>
+    <lastmod>2023-10-24T20:43:49+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/use_cases/</loc>
+    <lastmod>2023-10-23T22:17:21+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/use_cases/visibility_overview/</loc>
+    <lastmod>2023-10-23T22:17:21+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/observability/</loc>
+    <lastmod>2023-10-23T22:16:31+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/observability/create_s3_bucket/</loc>
+    <lastmod>2023-10-23T22:13:35+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/governance/</loc>
+    <lastmod>2023-10-23T22:11:56+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/application_lifecycle/</loc>
+    <lastmod>2023-10-23T22:11:15+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/application_lifecycle/integrated_app_deployment/</loc>
+    <lastmod>2023-10-23T22:11:15+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/cluster_lifecycle/</loc>
+    <lastmod>2023-10-23T22:02:41+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/categories/</loc>
   </url><url>
     <loc>http://rhacm-ws.nomiras.com/tags/</loc>
   </url>

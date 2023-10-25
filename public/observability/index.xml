@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Observabilities on RHACM Workshop</title>
+    <link>http://rhacm-ws.nomiras.com/observability/</link>
+    <description>Recent content in Observabilities on RHACM Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Oct 2023 22:16:31 +0200</lastBuildDate><atom:link href="http://rhacm-ws.nomiras.com/observability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grafana_integration</title>
+      <link>http://rhacm-ws.nomiras.com/observability/grafana_integration/</link>
+      <pubDate>Mon, 23 Oct 2023 22:16:31 +0200</pubDate>
+      
+      <guid>http://rhacm-ws.nomiras.com/observability/grafana_integration/</guid>
+      <description>Integrate Grafana into ACM
+Login to the bastion host host. Create a namespace by running the following command: oc create namespace open-cluster-management-observability Copy the pull secret into this new namespace by running the following TWO commands:
+DOCKER_CONFIG_JSON=`oc extract secret/pull-secret -n openshift-config --to=-
+open-cluster-management-observability --from-literal=.dockerconfigjson=&amp;#34;$DOCKER_CONFIG_JSON&amp;#34; --type=kubernetes.io/dockerconfigjson In your current folder create a file called thanos-object-storage.yaml and add the following text in the file. Please be sure to update your S3 bucket name and AWS Keys apiVersion: v1 kind: Secret metadata: name: thanos-object-storage type: Opaque stringData: thanos.</description>
+    </item>
+    
+    <item>
+      <title>Create_s3_bucket</title>
+      <link>http://rhacm-ws.nomiras.com/observability/create_s3_bucket/</link>
+      <pubDate>Mon, 23 Oct 2023 22:13:35 +0200</pubDate>
+      
+      <guid>http://rhacm-ws.nomiras.com/observability/create_s3_bucket/</guid>
+      <description>End to End Visibility (Observability use case) View system alerts, critical application metrics, and overall system health. Search, identify, and resolve issues that are impacting distributed workloads using an operational dashboard designed for Site Reliability Engineers (SREs). This is done via the integration of Grafana. Let&amp;rsquo;s walk through the steps to integrate Grafana with ACM. You will need your AWS Keys. (from RHDP system email) You will also need to create an AWS S3 bucket.</description>
+    </item>
+    
+  </channel>
+</rss>

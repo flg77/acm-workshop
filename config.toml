@@ -1,7 +1,38 @@
 baseURL = 'http://rhacm-ws.nomiras.com/'
 languageCode = 'en-us'
 title = 'RHACM Workshop'
-theme =  "hugo-theme-learn"
+theme = "hugo-theme-learn"
+sectionPagesMenu = "menu1"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+
+[menu]
+[[menu.menu1]]
+    name= 'Home'
+    url = '/'
+    weight = 1
+[[menu.menu1]]
+    name= 'Cluster Lifecycle'
+    url = '/cluster_lifecycle'
+    weight = 2
+[[menu.menu1]]
+    name= 'Application Lifecycle'
+    url = '/application_lifecycle'
+    weight = 3
+[[menu.menu1]]
+    name= 'Observability'
+    url = '/observability'
+    weight = 4
+[[menu.menu1]]
+    name= 'Governance'
+    url = '/governance'
+    weight = 5
+[[menu.menu1]]
+    name= 'Use Cases'
+    url = '/use_cases'
+    weight = 6
+
+
+
+

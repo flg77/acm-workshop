@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Use_cases on RHACM Workshop</title>
+    <link>http://rhacm-ws.nomiras.com/use_cases/</link>
+    <description>Recent content in Use_cases on RHACM Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Oct 2023 22:17:21 +0200</lastBuildDate><atom:link href="http://rhacm-ws.nomiras.com/use_cases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visibility Overview</title>
+      <link>http://rhacm-ws.nomiras.com/use_cases/visibility_overview/</link>
+      <pubDate>Mon, 23 Oct 2023 22:17:21 +0200</pubDate>
+      
+      <guid>http://rhacm-ws.nomiras.com/use_cases/visibility_overview/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

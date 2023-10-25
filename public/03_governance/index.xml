@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RHACM Workshop</title>
+    <title>03_governances on RHACM Workshop</title>
     <link>http://rhacm-ws.nomiras.com/03_governance/</link>
-    <description>Recent content on RHACM Workshop</description>
+    <description>Recent content in 03_governances on RHACM Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://rhacm-ws.nomiras.com/03_governance/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Oct 2023 22:11:56 +0200</lastBuildDate><atom:link href="http://rhacm-ws.nomiras.com/03_governance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rhacm_policies</title>
+      <link>http://rhacm-ws.nomiras.com/03_governance/rhacm_policies/</link>
+      <pubDate>Mon, 23 Oct 2023 22:11:56 +0200</pubDate>
+      
+      <guid>http://rhacm-ws.nomiras.com/03_governance/rhacm_policies/</guid>
+      <description>Governance, Risk, and Compliance (Security and compliance use case) Creating Policies in ACM At this point, you have completed the overview labs for Cluster Lifecycle and Application Lifecycle capabilities in RHACM. In the Cluster Lifecycle Lab, you learned how RHACM can help manage the lifecycles of your Kubernetes clusters, including both deploying new clusters and importing existing clusters. In that lab, you configured your RHACM instance to manage an OpenShift® cluster.</description>
+    </item>
+    
   </channel>
 </rss>

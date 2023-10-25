@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Create App - Application Lifecycle :: RHACM Workshop</title>
+
+    
+    <link href="/css/nucleus.css?1698222291" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1698222291" rel="stylesheet">
+    <link href="/css/hybrid.css?1698222291" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1698222291" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1698222291" rel="stylesheet">
+    <link href="/css/auto-complete.css?1698222291" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1698222291" rel="stylesheet">
+    <link href="/css/theme.css?1698222291" rel="stylesheet">
+    <link href="/css/tabs.css?1698222291" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1698222291" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1698222291"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/02_application_lifecycle/create_app/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://rhacm-ws.nomiras.com/">
+	  <img src="/logo.png">
+</a>
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1698222291"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1698222291"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/rhacm-ws.nomiras.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1698222291"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/appendix/" title="Appendices" class="dd-item
+        
+        
+        
+        ">
+      <a href="/appendix/">
+          Appendices
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/appendix/import_kubernetes/" title="Import Kubernetes" class="dd-item ">
+        <a href="/appendix/import_kubernetes/">
+        Import Kubernetes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/05_use_cases/" title="05_use_cases" class="dd-item
+        
+        
+        
+        ">
+      <a href="/05_use_cases/">
+          05_use_cases
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/05_use_cases/visibility_overview/" title="Visibility Overview" class="dd-item ">
+        <a href="/05_use_cases/visibility_overview/">
+        Visibility Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/04_observability/" title="04_observabilities" class="dd-item
+        
+        
+        
+        ">
+      <a href="/04_observability/">
+          04_observabilities
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/04_observability/grafana_integration/" title="Grafana_integration" class="dd-item ">
+        <a href="/04_observability/grafana_integration/">
+        Grafana_integration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/04_observability/create_s3_bucket/" title="Create_s3_bucket" class="dd-item ">
+        <a href="/04_observability/create_s3_bucket/">
+        Create_s3_bucket
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/03_governance/" title="03_governances" class="dd-item
+        
+        
+        
+        ">
+      <a href="/03_governance/">
+          03_governances
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/03_governance/rhacm_policies/" title="Rhacm_policies" class="dd-item ">
+        <a href="/03_governance/rhacm_policies/">
+        Rhacm_policies
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/02_application_lifecycle/" title="02_application_lifecycles" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/02_application_lifecycle/">
+          02_application_lifecycles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/02_application_lifecycle/create_app/" title="Create App - Application Lifecycle" class="dd-item active">
+        <a href="/02_application_lifecycle/create_app/">
+        Create App - Application Lifecycle
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/02_application_lifecycle/deploy_aap2/" title="Deploy_aap2" class="dd-item ">
+        <a href="/02_application_lifecycle/deploy_aap2/">
+        Deploy_aap2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/02_application_lifecycle/deploy_servicenow_dev/" title="Deploy_servicenow_dev" class="dd-item ">
+        <a href="/02_application_lifecycle/deploy_servicenow_dev/">
+        Deploy_servicenow_dev
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/02_application_lifecycle/deploy_snow_aap_integrate/" title="Deploy_snow_aap_integrate" class="dd-item ">
+        <a href="/02_application_lifecycle/deploy_snow_aap_integrate/">
+        Deploy_snow_aap_integrate
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/02_application_lifecycle/deploy_aap_creds_acm/" title="Deploy_aap_creds_acm" class="dd-item ">
+        <a href="/02_application_lifecycle/deploy_aap_creds_acm/">
+        Deploy_aap_creds_acm
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/02_application_lifecycle/integrated_app_deployment/" title="Integrated_app_deployment" class="dd-item ">
+        <a href="/02_application_lifecycle/integrated_app_deployment/">
+        Integrated_app_deployment
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/01_cluster_lifecycle/" title="01_cluster_lifecycles" class="dd-item
+        
+        
+        
+        ">
+      <a href="/01_cluster_lifecycle/">
+          01_cluster_lifecycles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/01_cluster_lifecycle/new_cluster/" title="Create a new cluster" class="dd-item ">
+        <a href="/01_cluster_lifecycle/new_cluster/">
+        Create a new cluster
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/01_cluster_lifecycle/new_sno/" title="New Single Node" class="dd-item ">
+        <a href="/01_cluster_lifecycle/new_sno/">
+        New Single Node
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/01_cluster_lifecycle/new_hosted_control_plane/" title="Create Hosted Control Plane" class="dd-item ">
+        <a href="/01_cluster_lifecycle/new_hosted_control_plane/">
+        Create Hosted Control Plane
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>RHACM Workshop</a> > <a href='/02_application_lifecycle/'>02_application_lifecycles</a> > Create App - Application Lifecycle
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#creating-an-application">Creating an Application</a></li>
+      </ul>
+    </li>
+    <li><a href="#namespace-book-import">|Name:| book-import|
+|Namespace:| book-import|</a></li>
+    <li><a href="#value-dev">|Cluster sets:| global|
+|Label:| environment|
+|Value:| dev|</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Create App - Application Lifecycle
+            </h1>
+          
+
+        
+
+
+<p>In the previous lab, you explored the Cluster Lifecycle functionality in RHACM. This allowed you to register/import an OpenShift® cluster to RHACM, which you can now use to deploy applications.</p>
+<p>Application Lifecycle functionality in RHACM provides the processes that are used to manage application resources on your managed clusters. This allows you to define a single or multi-cluster application using Kubernetes specifications, but with additional automation of the deployment and lifecycle management of resources to individual clusters. An application designed to run on a single cluster is straightforward and something you ought to be familiar with from working with OpenShift fundamentals. A multi-cluster application allows you to orchestrate the deployment of these same resources to multiple clusters, based on a set of rules you define for which clusters run the application components.</p>
+<p>The table below describes the different components that the Application Lifecycle model in RHACM is composed of:</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Channel</td>
+<td>Defines a place where deployable resources are stored, such as an object store, Kubernetes namespace, Helm repository, or GitHub repository.</td>
+</tr>
+<tr>
+<td>Subscription</td>
+<td>Defines a set of deployable resources that are to be deployed to a target cluster.</td>
+</tr>
+<tr>
+<td>Placement(Old PlacementRule API to be deprecated soon)</td>
+<td>Defines the target clusters where subscriptions deploy and maintain the application. It is composed of Kubernetes resources identified by the Subscription resource and pulled from the location defined in the Channel resource.</td>
+</tr>
+<tr>
+<td>Application</td>
+<td>A way to group the components here into a more easily viewable single resource. An Application resource typically references a Subscription resource.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>These are all Kubernetes custom resources, defined by a Custom Resource Definition (CRD), that are created for you when RHACM is installed. By creating these as Kubernetes native objects, you can interact with them the same way you would with a Pod. For instance, running oc get application retrieves a list of deployed RHACM applications just as oc get pods retrieves a list of deployed Pods.</p>
+<p>This may seem like a lot of extra resources to manage in addition to the deployables that actually make up your application. However, they make it possible to automate the composition, placement, and overall control of your applications when you are deploying to many clusters. With a single cluster, it is easy to log in and run oc create -f…​. If you need to do that on a dozen clusters, you want to make sure you do not make a mistake or miss a cluster, and you need a way to schedule and orchestrate updates to your applications. Leveraging the Application Lifecycle Builder in RHACM allows you to easily manage multi-cluster applications.</p>
+<h3 id="creating-an-application">Creating an Application</h3>
+<p>Prerequisites:</p>
+<pre><code>On the local cluster add a label:  `environment=dev`
+</code></pre>
+<p><img src="/202_1.png" alt="Edit Labels"></p>
+<pre><code>On the new cluster you provisioned via ACM double check you added the label:  `environment=prod`
+</code></pre>
+<p><img src="/202_2.png" alt="Overview Cluster Labels"></p>
+<p>In RHACM, navigate to Applications and click Create application and select Subscription.
+Enter the following information:</p>
+<p>Next to <strong>Create application</strong>, make sure the YAML dial is ON</p>
+<hr>
+<h2 id="namespace-book-import">|Name:| book-import|
+|Namespace:| book-import|</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th>** Under Repository location for resources, select the GIT repository **</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>URL:</td>
+<td><a href="https://github.com/hichammourad/book-import.git">https://github.com/hichammourad/book-import.git</a></td>
+</tr>
+<tr>
+<td>Branch:</td>
+<td>master-no-pre-post</td>
+</tr>
+<tr>
+<td>Path:</td>
+<td>book-import</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/202_3.png" alt="Create APplication"></p>
+<hr>
+<p>Under the <strong>Select clusters for application deployment</strong>, select <strong>Deploy application resources on clusters with all specified labels</strong></p>
+<hr>
+<h2 id="value-dev">|Cluster sets:| global|
+|Label:| environment|
+|Value:| dev|</h2>
+<p><img src="/202_4.png" alt="Set label dev"></p>
+<p>Click <strong>Create</strong> and after a few minutes you will see the application and all its components available in RHACM.</p>
+<p><img src="/202_5.png" alt="app deployed"></p>
+<p>If everything was done correctly you should be able to see the application deployed to local-cluster. Go to Applications, and make sure to filter by subscription as the image below:</p>
+<p><img src="/202_6.png" alt="check application subscription"></p>
+<p>This will show only the apps deployed from ACM, instead of all the existing apps in the managed clusters. Click on the <strong>book-import</strong> application and have a look at the <strong>topology</strong> view</p>
+<p><img src="/202_7.png" alt="topology view"></p>
+<p>Select the Route and click on the URL provided, you should see the Book Import application</p>
+<p><img src="/202_8.png" alt="topology route"></p>
+<p>See the Book Import user interface.</p>
+<p><img src="/202_9.png" alt="topology route"></p>
+<p>Feel free to experiment with the application.  Edit it and change the label to environment=prod.  What happens to the application?</p>
+<p>You have now completed the overview of the <strong>Application Lifecycle functionality</strong>* in RHACM.</p>
+<p>You successfully deployed an application to a target cluster using RHACM. This approach leveraged a Git repository which housed all of the manifests that defined your application. RHACM was able to take those manifests and use them as deployables, which were then deployed to the target cluster.</p>
+<p>You also leverage the power of labels and deploy the application to your imported cluster. I highly encourage you to play around with the labels and deploy this application to your local cluster. You can also create other clusters and or applications if you so desire.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><strong>If you would like to see how the Ansible Automation Platform “prehook” and “posthook” work inside ACM, you can complete the next section including the ServiceNow section. If you don’t want to experiment or demo this integration, you can skip to the Creating Policies in ACM section.</strong></p>
+<!-- raw HTML omitted -->
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/02_application_lifecycle/" title="02_application_lifecycles"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/02_application_lifecycle/deploy_aap2/" title="Deploy_aap2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1698222291"></script>
+    <script src="/js/perfect-scrollbar.min.js?1698222291"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1698222291"></script>
+    <script src="/js/jquery.sticky.js?1698222291"></script>
+    <script src="/js/featherlight.min.js?1698222291"></script>
+    <script src="/js/highlight.pack.js?1698222291"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1698222291"></script>
+    <script src="/js/learn.js?1698222291"></script>
+    <script src="/js/hugo-learn.js?1698222291"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1698222291"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

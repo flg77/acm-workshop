@@ -1,7 +1,7 @@
 ---
-title: "Import_kubernetes"
+title: "Import Kubernetes"
 date: 2023-10-24T20:43:49+02:00
-draft: true
+draft: False
 ---
 
 Importing a Kubernetes cluster

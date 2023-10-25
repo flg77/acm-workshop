@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Deploy_servicenow_dev :: RHACM Workshop</title>
+
+    
+    <link href="/css/nucleus.css?1698225216" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1698225216" rel="stylesheet">
+    <link href="/css/hybrid.css?1698225216" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1698225216" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1698225216" rel="stylesheet">
+    <link href="/css/auto-complete.css?1698225216" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1698225216" rel="stylesheet">
+    <link href="/css/theme.css?1698225216" rel="stylesheet">
+    <link href="/css/tabs.css?1698225216" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1698225216" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1698225216"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/application_lifecycle/deploy_servicenow_dev/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://rhacm-ws.nomiras.com/">
+	  <img src="/logo.png">
+</a>
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1698225216"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1698225216"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/rhacm-ws.nomiras.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1698225216"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/appendix/" title="Appendices" class="dd-item
+        
+        
+        
+        ">
+      <a href="/appendix/">
+          Appendices
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/appendix/import_kubernetes/" title="Import Kubernetes" class="dd-item ">
+        <a href="/appendix/import_kubernetes/">
+        Import Kubernetes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/use_cases/" title="Use_cases" class="dd-item
+        
+        
+        
+        ">
+      <a href="/use_cases/">
+          Use_cases
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/use_cases/visibility_overview/" title="Visibility Overview" class="dd-item ">
+        <a href="/use_cases/visibility_overview/">
+        Visibility Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/observability/" title="Observabilities" class="dd-item
+        
+        
+        
+        ">
+      <a href="/observability/">
+          Observabilities
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/observability/grafana_integration/" title="Grafana_integration" class="dd-item ">
+        <a href="/observability/grafana_integration/">
+        Grafana_integration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/observability/create_s3_bucket/" title="Create_s3_bucket" class="dd-item ">
+        <a href="/observability/create_s3_bucket/">
+        Create_s3_bucket
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/governance/" title="Governances" class="dd-item
+        
+        
+        
+        ">
+      <a href="/governance/">
+          Governances
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/governance/rhacm_policies/" title="Rhacm_policies" class="dd-item ">
+        <a href="/governance/rhacm_policies/">
+        Rhacm_policies
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/application_lifecycle/" title="Application_lifecycles" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/application_lifecycle/">
+          Application_lifecycles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/application_lifecycle/create_app/" title="Create App - Application Lifecycle" class="dd-item ">
+        <a href="/application_lifecycle/create_app/">
+        Create App - Application Lifecycle
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/application_lifecycle/deploy_aap2/" title="Deploy_aap2" class="dd-item ">
+        <a href="/application_lifecycle/deploy_aap2/">
+        Deploy_aap2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/application_lifecycle/deploy_servicenow_dev/" title="Deploy_servicenow_dev" class="dd-item active">
+        <a href="/application_lifecycle/deploy_servicenow_dev/">
+        Deploy_servicenow_dev
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/application_lifecycle/deploy_snow_aap_integrate/" title="Deploy_snow_aap_integrate" class="dd-item ">
+        <a href="/application_lifecycle/deploy_snow_aap_integrate/">
+        Deploy_snow_aap_integrate
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/application_lifecycle/deploy_aap_creds_acm/" title="Deploy_aap_creds_acm" class="dd-item ">
+        <a href="/application_lifecycle/deploy_aap_creds_acm/">
+        Deploy_aap_creds_acm
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/application_lifecycle/integrated_app_deployment/" title="Integrated_app_deployment" class="dd-item ">
+        <a href="/application_lifecycle/integrated_app_deployment/">
+        Integrated_app_deployment
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/cluster_lifecycle/" title="Cluster_lifecycles" class="dd-item
+        
+        
+        
+        ">
+      <a href="/cluster_lifecycle/">
+          Cluster_lifecycles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/cluster_lifecycle/new_cluster/" title="Create a new cluster" class="dd-item ">
+        <a href="/cluster_lifecycle/new_cluster/">
+        Create a new cluster
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/cluster_lifecycle/new_sno/" title="New Single Node" class="dd-item ">
+        <a href="/cluster_lifecycle/new_sno/">
+        New Single Node
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/cluster_lifecycle/new_hosted_control_plane/" title="Create Hosted Control Plane" class="dd-item ">
+        <a href="/cluster_lifecycle/new_hosted_control_plane/">
+        Create Hosted Control Plane
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>RHACM Workshop</a> > <a href='/application_lifecycle/'>Application_lifecycles</a> > Deploy_servicenow_dev
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#deploying-a-servicenow-developer-instance">Deploying a ServiceNow Developer Instance</a>
+      <ul>
+        <li><a href="#create-an-ansible-project">Create an Ansible Project</a></li>
+        <li><a href="#create-an-ansible-job-template">Create an Ansible Job Template</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Deploy_servicenow_dev
+            </h1>
+          
+
+        
+
+
+<h2 id="deploying-a-servicenow-developer-instance">Deploying a ServiceNow Developer Instance</h2>
+<p>The purpose of this exercise is to take advantage of the Ansible Automation Platform (AAP) you
+just deployed to kick off Ansible Jobs (tied to prehook or posthook tasks in the application
+lifecycle of ACM.</p>
+<p>A <strong>pre hook</strong> will kick off an Ansible job before the application creation / modification.
+A <strong>post hook</strong> will kick off an Ansible job after the application creation / modification.</p>
+<p>In the following example the Ansible job will trigger the creation of ServiceNow Change
+Requests. Perform this step if you would like to show or learn how this integration works. You
+will take advantage of this within the application lifecycle engine.</p>
+<p>To deploy your own instance of ServiceNow, please visit <a href="https://developer.servicenow.com">https://developer.servicenow.com</a>
+Select <strong>Sign up and Start Building</strong></p>
+<p><img src="/202_17.png" alt="SNOW Portal"></p>
+<p>After signing up and requesting your developer ServiceNow instance (it may look like this
+You can click on the third option, Developer Program, and then on Start Building
+👇)</p>
+<p><img src="/202_18.png" alt="SNOW Welcome Msg"></p>
+<p>You can select the Utah version(latest) and soon, you will have an instance URL that looks like
+this: <a href="https://dev#####.service-now.com">https://dev#####.service-now.com</a>
+Make note of your instance URL, your admin username and password.
+Configure Ansible to trigger a job that will create a ServiceNow
+Change Request
+Create a ServiceNow Credential Type
+In Ansible Automation Platform we need to create a Credential Type for ServiceNow, and then
+add the Credentials for our ServiceNow developer instance.</p>
+<ul>
+<li>Select Credential Types, under Administration, in the left menu and then click ADD.</li>
+<li>Name: ServiceNow</li>
+<li>Input Configuration:</li>
+</ul>
+<pre tabindex="0"><code>fields:
+- id: SNOW_USERNAME
+type: string
+label: Service Now Username
+- id: SNOW_INSTANCE
+type: string
+label: Service Now Instance Name (https://devXXXXX.service-now.com)
+- id: SNOW_PASSWORD
+type: string
+label: Service Now Password
+secret: true
+required:
+- SNOW_USERNAME
+- SNOW_INSTANCE
+- SNOW_PASSWORD
+</code></pre><ul>
+<li>Add the following text to the <strong>INJECTOR CONFIGURATION</strong> field</li>
+</ul>
+<pre tabindex="0"><code>extra_vars:
+snow_instance: &#39;{{ SNOW_INSTANCE }}&#39;
+snow_password: &#39;{{ SNOW_PASSWORD }}&#39;
+snow_username: &#39;{{ SNOW_USERNAME }}&#39;
+</code></pre><ul>
+<li><strong>SAVE</strong> this new credential type</li>
+</ul>
+<p><img src="/202_19.png" alt="SNOW Welcome Msg"></p>
+<p>Add the ServiceNow Credentials</p>
+<p>Navigate to &ndash;&gt; <strong>Resources → Credentials</strong>.
+&ndash;&gt; Click on <strong>ADD</strong>.</p>
+<p>|<strong>Name:</strong> |ServiceNow Credentials|
+|<strong>CREDENTIAL TYPE</strong>|  select <strong>ServiceNow</strong>|
+|<strong>ORGANIZATION</strong> | select <strong>Default</strong>|
+|<strong>USERNAME</strong>| admin|
+|<strong>INSTANCE NAME</strong>| instance name of your developer instance. (<a href="https://dev#####.service-now.com">https://dev#####.service-now.com</a>)|
+|<strong>PASSWORD</strong>| password from your user settings in the ServiceNow dashboard/website.|</p>
+<p>&ndash;&gt; Then <strong>SAVE</strong>.</p>
+<p><img src="/202_20.png" alt="Save AAP Snow creds"></p>
+<h3 id="create-an-ansible-project">Create an Ansible Project</h3>
+<p>In Ansible we need to create a Project</p>
+<p>● Select Projects, under Resources, in the left menu. Click on ADD. Enter
+snow-create-change-record in the NAME field
+● Set the ORGANIZATION field to Default
+● Set the SCM TYPE to Git
+● Set the SCM URL to: <a href="https://github.com/levenhagen/ansible_snow">https://github.com/levenhagen/ansible_snow</a>
+● Click SAVE</p>
+<p><img src="/202_21.png" alt="AAP Projects"></p>
+<h3 id="create-an-ansible-job-template">Create an Ansible Job Template</h3>
+<p>In Ansible we need to create a Job Template</p>
+<p>● Select Templates, under Resources, in the left menu.
+● Click on ADD then Add Job Template.
+○ NAME: snow-create-change-record
+○ INVENTORY field search and select Demo Inventory, and check PROMPT ON
+LAUNCH
+○ PROJECT: snow-create-change-record
+○ PLAYBOOK: select servicenow_changerequest.yml
+○ CREDENTIALS: from the dropdown select ServiceNow, and select ServiceNow
+Credentials Click SELECT
+○ VARIABLES field check PROMPT ON LAUNCH
+● Scroll all the way to the bottom, leave everything as default and click SAVE
+● Success will indicate it can communicate with ServiceNow and it successfully created a
+Change Request in ServiceNow</p>
+<p><img src="/202_22.png" alt="AAP Job Template"></p>
+<p>To verify all was configured properly click the Launch Button.
+Click NEXT, NEXT and LAUNCH.
+Verify that the job ran successfully by looking at the output:</p>
+<p><img src="/202_23.png" alt="AAP Job Template"></p>
+<p>You can also look in your ServiceNow instance.</p>
+<p><img src="/202_24.png" alt="Verify in SNOW instance"></p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/application_lifecycle/deploy_aap2/" title="Deploy_aap2"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/application_lifecycle/deploy_snow_aap_integrate/" title="Deploy_snow_aap_integrate" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1698225216"></script>
+    <script src="/js/perfect-scrollbar.min.js?1698225216"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1698225216"></script>
+    <script src="/js/jquery.sticky.js?1698225216"></script>
+    <script src="/js/featherlight.min.js?1698225216"></script>
+    <script src="/js/highlight.pack.js?1698225216"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1698225216"></script>
+    <script src="/js/learn.js?1698225216"></script>
+    <script src="/js/hugo-learn.js?1698225216"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1698225216"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+
