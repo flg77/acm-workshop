@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Create a new cluster on RHACM Workshop</title>
+    <link>http://rhacm-ws.nomiras.com/01_new_cluster/</link>
+    <description>Recent content in Create a new cluster on RHACM Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Oct 2023 22:01:13 +0200</lastBuildDate><atom:link href="http://rhacm-ws.nomiras.com/01_new_cluster/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

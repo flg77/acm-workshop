@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Create Hosted Control Plane :: RHACM Workshop</title>
+
+    
+    <link href="/css/nucleus.css?1698340953" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1698340953" rel="stylesheet">
+    <link href="/css/hybrid.css?1698340953" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1698340953" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1698340953" rel="stylesheet">
+    <link href="/css/auto-complete.css?1698340953" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1698340953" rel="stylesheet">
+    <link href="/css/theme.css?1698340953" rel="stylesheet">
+    <link href="/css/tabs.css?1698340953" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1698340953" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1698340953"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/cluster_lifecycle/03_hosted_control_plane/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="http://rhacm-ws.nomiras.com/">
+	  <img src="/logo.png">
+</a>
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1698340953"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1698340953"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/rhacm-ws.nomiras.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1698340953"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/appendix/" title="Appendices" class="dd-item
+        
+        
+        
+        ">
+      <a href="/appendix/">
+          Appendices
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/appendix/import_kubernetes/" title="Import Kubernetes" class="dd-item ">
+        <a href="/appendix/import_kubernetes/">
+        Import Kubernetes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/use_cases/" title="Use_cases" class="dd-item
+        
+        
+        
+        ">
+      <a href="/use_cases/">
+          Use_cases
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/use_cases/visibility_overview/" title="Visibility Overview" class="dd-item ">
+        <a href="/use_cases/visibility_overview/">
+        Visibility Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/observability/" title="Observabilities" class="dd-item
+        
+        
+        
+        ">
+      <a href="/observability/">
+          Observabilities
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/observability/grafana_integration/" title="Grafana_integration" class="dd-item ">
+        <a href="/observability/grafana_integration/">
+        Grafana_integration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/observability/create_s3_bucket/" title="Create_s3_bucket" class="dd-item ">
+        <a href="/observability/create_s3_bucket/">
+        Create_s3_bucket
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/governance/" title="Governances" class="dd-item
+        
+        
+        
+        ">
+      <a href="/governance/">
+          Governances
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/governance/rhacm_policies/" title="Rhacm_policies" class="dd-item ">
+        <a href="/governance/rhacm_policies/">
+        Rhacm_policies
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/application_lifecycle/" title="Application_lifecycles" class="dd-item
+        
+        
+        
+        ">
+      <a href="/application_lifecycle/">
+          Application_lifecycles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/application_lifecycle/create_app/" title="Create App - Application Lifecycle" class="dd-item ">
+        <a href="/application_lifecycle/create_app/">
+        Create App - Application Lifecycle
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/application_lifecycle/deploy_aap2/" title="Deploy_aap2" class="dd-item ">
+        <a href="/application_lifecycle/deploy_aap2/">
+        Deploy_aap2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/application_lifecycle/deploy_servicenow_dev/" title="Deploy_servicenow_dev" class="dd-item ">
+        <a href="/application_lifecycle/deploy_servicenow_dev/">
+        Deploy_servicenow_dev
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/application_lifecycle/deploy_snow_aap_integrate/" title="Deploy_snow_aap_integrate" class="dd-item ">
+        <a href="/application_lifecycle/deploy_snow_aap_integrate/">
+        Deploy_snow_aap_integrate
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/application_lifecycle/deploy_aap_creds_acm/" title="Deploy_aap_creds_acm" class="dd-item ">
+        <a href="/application_lifecycle/deploy_aap_creds_acm/">
+        Deploy_aap_creds_acm
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/application_lifecycle/integrated_app_deployment/" title="Integrated_app_deployment" class="dd-item ">
+        <a href="/application_lifecycle/integrated_app_deployment/">
+        Integrated_app_deployment
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/cluster_lifecycle/" title="Cluster_lifecycles" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/cluster_lifecycle/">
+          Cluster_lifecycles
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/cluster_lifecycle/01_new_cluster/" title="Create a new cluster" class="dd-item
+        
+        
+        
+        ">
+      <a href="/cluster_lifecycle/01_new_cluster/">
+          Create a new cluster
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/cluster_lifecycle/02_new_sno/" title="New Single Node" class="dd-item
+        
+        
+        
+        ">
+      <a href="/cluster_lifecycle/02_new_sno/">
+          New Single Node
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/cluster_lifecycle/03_hosted_control_plane/" title="Create Hosted Control Plane" class="dd-item
+        
+        active
+        
+        ">
+      <a href="/cluster_lifecycle/03_hosted_control_plane/">
+          Create Hosted Control Plane
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>RHACM Workshop</a> > <a href='/cluster_lifecycle/'>Cluster_lifecycles</a> > Create Hosted Control Plane
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#2---deploying-the-hosted-cluster">2 - Deploying the Hosted Cluster</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Create Hosted Control Plane
+            </h1>
+          
+
+        
+
+
+
+	<p>** Hosted Control Planes** is a <strong>technology preview</strong> feature, it shouldn’t be used in production clusters.</p>
+<p>In this section, we will enable the feature and deploy a Hosted Cluster on AWS.</p>
+<p>On the Clusters page, select once again Create Cluster.</p>
+<p>Select <strong>Amazon Web Services</strong> and <strong>Hosted</strong> mode. You’ll face the official instructions on how to create a hosted cluster.</p>
+<p>1 - Turn on Hosted Control Planes functionality</p>
+<p>The hosted control planes feature is available as a technology preview item and it’s disabled by default.
+First,have a  look in the email  instructions on how to log in to the bastion machine, and let’s start the setup.</p>
+<p>In the bastion VM, run: <code>aws configure</code></p>
+<p>When prompted, enter your <strong>AWS credentials</strong> according to the RHDP email you received. For the default region name, use: <code>us-east-2</code>. Leave the default output format blank.</p>
+<p>Next, let’s create a S3 bucket with public access to host OIDC discovery documents for your hypershift clusters. Run:</p>
+<pre tabindex="0"><code>$ export BUCKET_NAME=hcp-oidc
+$ export REGION=us-east-2
+$ aws s3api create-bucket --bucket $BUCKET_NAME \
+ --create-bucket-configuration LocationConstraint=$REGION \
+
+  --region $REGION
+
+  $ aws s3api delete-public-access-block --bucket $BUCKET_NAME
+
+  $ echo &#39;{
+
+    &#34;Version&#34;: &#34;2012-10-17&#34;,
+
+    &#34;Statement&#34;: [
+
+        {
+
+            &#34;Effect&#34;: &#34;Allow&#34;,
+
+            &#34;Principal&#34;: &#34;*&#34;,
+
+            &#34;Action&#34;: [
+
+                &#34;s3:PutObject&#34;,
+
+                &#34;s3:GetObject&#34;
+
+            ],
+
+            &#34;Resource&#34;: &#34;arn:aws:s3:::${BUCKET_NAME}/*&#34;
+
+        }
+
+    ]
+  }&#39; | envsubst &gt; policy.json
+
+
+
+  $ aws s3api put-bucket-policy --bucket $BUCKET_NAME --policy file://policy.json
+</code></pre><p>Now, let’s create a Secret in the local-cluster namespace so the HyperShift operator will know how to use the bucket that we just created. Don’t forget the second command to apply the labels:</p>
+<pre tabindex="0"><code>
+  $ oc create secret generic hypershift-operator-oidc-provider-s3-credentials --from-file=credentials=$HOME/.aws/credentials --from-literal=bucket=$BUCKET_NAME --from-literal=region=us-east-2 -n local-cluster
+
+  
+  $ oc label secret hypershift-operator-oidc-provider-s3-credentials cluster.open-cluster-management.io/credentials=&#34;&#34; cluster.open-cluster-management.io/type=awss3 -n local-cluster
+</code></pre><p>You can validate it in the ACM UI, just click on Credentials:</p>
+<p><img src="/101_10.png" alt="Validate ACM UI"></p>
+<p>Finally, we’re now ready to enable the feature. Let’s do it by patching the <strong>MultiClusterEngine CR</strong>.</p>
+<pre tabindex="0"><code>
+  $ oc patch mce multiclusterengine --type=merge -p &#39;{&#34;spec&#34;:{&#34;overrides&#34;:{&#34;components&#34;:[{&#34;name&#34;:&#34;hypershift-preview&#34;,&#34;enabled&#34;: true}]}}}&#39;
+</code></pre><p>Enabling the feature automatically enables the hypershift-addon on local-cluster, per image below. This will also install the HyperShift operator in the hypershift namespace. The installation may take a few minutes to complete.</p>
+<p>NOTE: As mentioned, the hypershift add-on will be automatically installed in the local-cluster. Access the Add-ons tab in the Clusters view and you’ll see the degraded status. As you can see in the image below:</p>
+<p>This is because the operator will try to deploy 2 operator pods, but this is a single-node OpenShift environment. The anti-affinity rule will make the second pod stay as ‘pending’.
+In the OpenShift console, go to the Deployments view in the hypershift project and manually scale it down to 1. This won’t affect the deployment of the HostedCluster, and consequently won’t affect the demonstration. See image below:</p>
+<p>You should now see all the add-ons back to the available status in the local-cluster add-ons tab.</p>
+<h3 id="2---deploying-the-hosted-cluster">2 - Deploying the Hosted Cluster</h3>
+<p>First of all, we’ll need to copy your pull secret from this link.</p>
+<p>In the bastion machine, paste the content of your pull secret in a file called pull-secret in the home directory. Example:</p>
+<pre tabindex="0"><code>  $ vim $HOME/pull-secret
+</code></pre><p>Next, we’ll need the hypershift CLI. From the OpenShift Container Platform console, in the right-hand side of the top bar, click the Help icon (?) -&gt; Command Line Tools.</p>
+<p>Right-click Download hypershift CLI for Linux for x86_64, and click on Copy Link Address or run:</p>
+<pre tabindex="0"><code>  $ oc get consoleclidownload hypershift-cli-download -o json | jq -r &#39;.spec.links[] | select(.text==&#34;Download hypershift CLI for Linux for x86_64&#34;).href&#39;
+</code></pre><p>Now, from the bastion machine, paste the link you just got  into the below command and run the following command:</p>
+<pre tabindex="0"><code>  $ wget &lt;the link copied in the step above&gt;
+</code></pre><p>Example: $ wget <a href="https://hypershift-cli-download-multicluster-engine.example.com/linux/amd64/hypershift.tar.gz">https://hypershift-cli-download-multicluster-engine.example.com/linux/amd64/hypershift.tar.gz</a></p>
+<p>You should see a new file named hypershift.tar.gz in the lab-user home directory. Now, run:</p>
+<pre tabindex="0"><code>  $ tar xvzf hypershift.tar.gz
+
+  $ chmod +x ./hypershift
+
+  $ sudo mv ./hypershift /usr/local/bin/
+</code></pre><p>Finally, let’s create a namespace to host our HostedCluster and NodePools objects.</p>
+<pre tabindex="0"><code>
+  $ oc new-project hcp-clusters
+</code></pre><p>Export the following variables:</p>
+<pre tabindex="0"><code>
+  $ export CLUSTER_NAME=hcp
+  
+  export INFRA_ID=hcp
+  export NAMESPACE=hcp-clusters
+
+  export BASE_DOMAIN=&lt;&lt;replace here with your base domain from the RHDP email&gt;&gt;
+</code></pre><p>And run:</p>
+<pre tabindex="0"><code>  $ hypershift create cluster aws \
+
+  --name $CLUSTER_NAME \
+
+  --infra-id $INFRA_ID \
+
+  --namespace $NAMESPACE \
+
+  --base-domain $BASE_DOMAIN \
+
+  --pull-secret $HOME/pull-secret \
+  
+  --node-pool-replicas=3 \
+
+  --aws-creds $HOME/.aws/credentials \
+  
+  --region $REGION \
+
+  --release-image quay.io/openshift-release-dev/ocp-release:4.13.12-x86_64
+</code></pre><p>NOTE: The command itself might finish quickly, and soon, you’ll see the cluster listed in the Clusters page, but the whole installation process takes around 15 minutes to complete.</p>
+<p>Notice that it says “Pending import”. That’s ok for now but you’ll need to manually import the cluster once the installation is finished. Now, click on the cluster entry (hcp) to display some details, information and outputs to verify the installation progress.</p>
+<p>After a little while, once you see all the configs are reporting ready  ✅ - all Cluster Operators are successfully deployed, ClusterVersion is available, NodePool is ready - go ahead to the bottom of the page and you should be able to access the Console URL with the provided kubeadmin credentials.</p>
+<p>Note: some failing status may be also acceptable depending on the hosted cluster configuration. For example: for ClusterVersionUpgradeable, showing a ❓red icon could be normal depending if the next version available has API deprecations.</p>
+<p><img src="/101_11.png" alt="Hypershift Add-On"></p>
+<p>Don’t forget to import the cluster in the cluster’s view, so RHACM will install its agent in the Hosted Cluster. If everything went successfully, at the end, should see something like this:</p>
+<p>Bonus: you can see the containerized control plane by accessing the Topology page in the Developer view and selecting the namespace hcp-clusters-hcp.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/cluster_lifecycle/02_new_sno/" title="New Single Node"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/cluster_lifecycle/01_new_cluster/" title="Create a new cluster" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1698340953"></script>
+    <script src="/js/perfect-scrollbar.min.js?1698340953"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1698340953"></script>
+    <script src="/js/jquery.sticky.js?1698340953"></script>
+    <script src="/js/featherlight.min.js?1698340953"></script>
+    <script src="/js/highlight.pack.js?1698340953"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1698340953"></script>
+    <script src="/js/learn.js?1698340953"></script>
+    <script src="/js/hugo-learn.js?1698340953"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1698340953"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>

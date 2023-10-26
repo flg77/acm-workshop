@@ -1,73 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>02_application_lifecycles on RHACM Workshop</title>
+    <title>Application Lifecycle on RHACM Workshop</title>
     <link>http://rhacm-ws.nomiras.com/02_application_lifecycle/</link>
-    <description>Recent content in 02_application_lifecycles on RHACM Workshop</description>
+    <description>Recent content in Application Lifecycle on RHACM Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Oct 2023 22:11:15 +0200</lastBuildDate><atom:link href="http://rhacm-ws.nomiras.com/02_application_lifecycle/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Create App - Application Lifecycle</title>
-      <link>http://rhacm-ws.nomiras.com/02_application_lifecycle/create_app/</link>
-      <pubDate>Mon, 23 Oct 2023 22:03:10 +0200</pubDate>
-      
-      <guid>http://rhacm-ws.nomiras.com/02_application_lifecycle/create_app/</guid>
-      <description>In the previous lab, you explored the Cluster Lifecycle functionality in RHACM. This allowed you to register/import an OpenShift® cluster to RHACM, which you can now use to deploy applications.
-Application Lifecycle functionality in RHACM provides the processes that are used to manage application resources on your managed clusters. This allows you to define a single or multi-cluster application using Kubernetes specifications, but with additional automation of the deployment and lifecycle management of resources to individual clusters.</description>
-    </item>
-    
-    <item>
-      <title>Deploy_aap2</title>
-      <link>http://rhacm-ws.nomiras.com/02_application_lifecycle/deploy_aap2/</link>
-      <pubDate>Mon, 23 Oct 2023 22:07:25 +0200</pubDate>
-      
-      <guid>http://rhacm-ws.nomiras.com/02_application_lifecycle/deploy_aap2/</guid>
-      <description>Deploying Ansible Automation Platform 2 The purpose of this exercise is to deploy an Ansible Automation Platform and the Automation Controller (formerly known as Ansible Tower) and integrate it with RHACM to perform pre/post tasks within the application lifecycle engine. The prehook and posthook task allows you to trigger an Ansible playbook before and after the application is deployed, respectively. Let’s get started with installing the Ansible Automation Platform (AAP) operator.</description>
-    </item>
-    
-    <item>
-      <title>Deploy_servicenow_dev</title>
-      <link>http://rhacm-ws.nomiras.com/02_application_lifecycle/deploy_servicenow_dev/</link>
-      <pubDate>Mon, 23 Oct 2023 22:07:50 +0200</pubDate>
-      
-      <guid>http://rhacm-ws.nomiras.com/02_application_lifecycle/deploy_servicenow_dev/</guid>
-      <description>Deploying a ServiceNow Developer Instance The purpose of this exercise is to take advantage of the Ansible Automation Platform (AAP) you just deployed to kick off Ansible Jobs (tied to prehook or posthook tasks in the application lifecycle of ACM.
-A pre hook will kick off an Ansible job before the application creation / modification. A post hook will kick off an Ansible job after the application creation / modification.</description>
-    </item>
-    
-    <item>
-      <title>Deploy_snow_aap_integrate</title>
-      <link>http://rhacm-ws.nomiras.com/02_application_lifecycle/deploy_snow_aap_integrate/</link>
-      <pubDate>Mon, 23 Oct 2023 22:08:23 +0200</pubDate>
-      
-      <guid>http://rhacm-ws.nomiras.com/02_application_lifecycle/deploy_snow_aap_integrate/</guid>
-      <description>Create an application to take advantage of the ACM - Ansible integration The purpose of this short section is to show how ACM integration with Ansible will kick off an Ansible Job.
-In this case the Ansible Job will run a playbook that will trigger the creation of a ServiceNow Change Request, exactly like we did and saw in the previous section.
-Within ACM navigate to the Applications menu on the left, and click Create application →</description>
-    </item>
-    
-    <item>
-      <title>Deploy_aap_creds_acm</title>
-      <link>http://rhacm-ws.nomiras.com/02_application_lifecycle/deploy_aap_creds_acm/</link>
-      <pubDate>Mon, 23 Oct 2023 22:10:27 +0200</pubDate>
-      
-      <guid>http://rhacm-ws.nomiras.com/02_application_lifecycle/deploy_aap_creds_acm/</guid>
-      <description>Create AAP credential in ACM Here, we are going to set up the credential which is going to allow ACM to interact with our AAP instance. Click on Credentials on the left menu and select Add Credential button.
-Credential type: Ansible Automation Platform Credential name: aapaccess Namespace: open-cluster-management
-Click NEXT
-For Ansible Tower Host enter you Ansible instance URL, you will find this information on previous screen if not check the ROUTES on your HUB Cluster For Ansible Tower token enter the admin user token you generated earlier In order to save, click NEXT and ADD.</description>
-    </item>
-    
-    <item>
-      <title>Integrated_app_deployment</title>
-      <link>http://rhacm-ws.nomiras.com/02_application_lifecycle/integrated_app_deployment/</link>
-      <pubDate>Mon, 23 Oct 2023 22:11:15 +0200</pubDate>
-      
-      <guid>http://rhacm-ws.nomiras.com/02_application_lifecycle/integrated_app_deployment/</guid>
-      <description>Create an application to take advantage of the ACM - Ansible integration The purpose of this short section is to show how ACM integration with Ansible will kick off an Ansible Job.
-In this case the Ansible Job will run a playbook that will trigger the creation of a ServiceNow Change Request, exactly like we did and saw in the previous section. Within ACM navigate to the Applications menu on the left, and click Create application → Subscription.</description>
-    </item>
-    
   </channel>
 </rss>

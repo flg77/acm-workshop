@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Create_s3_bucket on RHACM Workshop</title>
+    <link>http://rhacm-ws.nomiras.com/04_observability/01_create_s3_bucket/</link>
+    <description>Recent content in Create_s3_bucket on RHACM Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Oct 2023 22:13:35 +0200</lastBuildDate><atom:link href="http://rhacm-ws.nomiras.com/04_observability/01_create_s3_bucket/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
