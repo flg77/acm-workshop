@@ -11,9 +11,6 @@
     <loc>http://rhacm-ws.nomiras.com/03_governance/</loc>
     <lastmod>2023-10-23T22:11:56+02:00</lastmod>
   </url><url>
-    <loc>http://rhacm-ws.nomiras.com/01_cluster_lifecycle/03_hosted_control_plane/</loc>
-    <lastmod>2023-10-23T22:02:41+02:00</lastmod>
-  </url><url>
     <loc>http://rhacm-ws.nomiras.com/04_observability/</loc>
     <lastmod>2023-10-23T22:16:31+02:00</lastmod>
   </url><url>
@@ -25,6 +22,9 @@
   </url><url>
     <loc>http://rhacm-ws.nomiras.com/01_cluster_lifecycle/02_new_sno/</loc>
     <lastmod>2023-10-23T22:01:20+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/01_cluster_lifecycle/03_hosted_control_plane/</loc>
+    <lastmod>2023-10-23T22:02:41+02:00</lastmod>
   </url><url>
     <loc>http://rhacm-ws.nomiras.com/02_application_lifecycle/01_create_app/</loc>
     <lastmod>2023-10-23T22:03:10+02:00</lastmod>
