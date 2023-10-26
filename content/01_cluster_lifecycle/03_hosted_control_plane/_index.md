@@ -2,7 +2,7 @@
 title: "Create Hosted Control Plane"
 date: 2023-10-23T22:02:41+02:00
 draft: false
-weight: 3
+weight: 13
 ---
 
 ** Hosted Control Planes** is a **technology preview** feature, it shouldn’t be used in production clusters. 
@@ -75,7 +75,7 @@ Now, let’s create a Secret in the local-cluster namespace so the HyperShift op
 ```
 You can validate it in the ACM UI, just click on Credentials:
 
-![Validate ACM UI](/101_10.png)
+![Validate ACM UI](/images/101_10.png)
 
 Finally, we’re now ready to enable the feature. Let’s do it by patching the **MultiClusterEngine CR**.
 
@@ -168,7 +168,7 @@ After a little while, once you see all the configs are reporting ready  ✅ - al
 
 Note: some failing status may be also acceptable depending on the hosted cluster configuration. For example: for ClusterVersionUpgradeable, showing a ❓red icon could be normal depending if the next version available has API deprecations.
 
-![Hypershift Add-On](/101_11.png)
+![Hypershift Add-On](/images/101_11.png)
 
 Don’t forget to import the cluster in the cluster’s view, so RHACM will install its agent in the Hosted Cluster. If everything went successfully, at the end, should see something like this:
 

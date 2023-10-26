@@ -31,11 +31,11 @@ Prerequisites:
 
     On the local cluster add a label:  `environment=dev`
 
-![Edit Labels](/202_1.png)
+![Edit Labels](/images/202_1.png)
 
     On the new cluster you provisioned via ACM double check you added the label:  `environment=prod`
 
-![Overview Cluster Labels](/202_2.png)
+![Overview Cluster Labels](/images/202_2.png)
 
 In RHACM, navigate to Applications and click Create application and select Subscription.
 Enter the following information:
@@ -55,7 +55,7 @@ Next to **Create application**, make sure the YAML dial is ON
 |Path:|  book-import|
 
 
-![Create APplication](/202_3.png)
+![Create APplication](/images/202_3.png)
 
 ---
 Under the **Select clusters for application deployment**, select **Deploy application resources on clusters with all specified labels**
@@ -65,33 +65,33 @@ Under the **Select clusters for application deployment**, select **Deploy applic
 |Label:| environment|
 |Value:| dev|
 ---
-![Set label dev](/202_4.png)
+![Set label dev](/images/202_4.png)
 
 
 Click **Create** and after a few minutes you will see the application and all its components available in RHACM.
 
-![app deployed](/202_5.png)
+![app deployed](/images/202_5.png)
 
 
  If everything was done correctly you should be able to see the application deployed to local-cluster. Go to Applications, and make sure to filter by subscription as the image below:
 
 
-![check application subscription](/202_6.png)
+![check application subscription](/images/202_6.png)
 
 This will show only the apps deployed from ACM, instead of all the existing apps in the managed clusters. Click on the **book-import** application and have a look at the **topology** view
 
 
-![topology view](/202_7.png)
+![topology view](/images/202_7.png)
 
 Select the Route and click on the URL provided, you should see the Book Import application
 
 
-![topology route](/202_8.png)
+![topology route](/images/202_8.png)
 
 
 See the Book Import user interface.
 
-![topology route](/202_9.png)
+![topology route](/images/202_9.png)
 
 
 Feel free to experiment with the application.  Edit it and change the label to environment=prod.  What happens to the application?

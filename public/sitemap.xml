@@ -5,14 +5,8 @@
     <loc>http://rhacm-ws.nomiras.com/01_cluster_lifecycle/</loc>
     <lastmod>2023-10-23T22:02:41+02:00</lastmod>
   </url><url>
-    <loc>http://rhacm-ws.nomiras.com/01_cluster_lifecycle/01_new_cluster/</loc>
-    <lastmod>2023-10-23T22:01:13+02:00</lastmod>
-  </url><url>
     <loc>http://rhacm-ws.nomiras.com/02_application_lifecycle/</loc>
     <lastmod>2023-10-23T22:11:15+02:00</lastmod>
-  </url><url>
-    <loc>http://rhacm-ws.nomiras.com/01_cluster_lifecycle/02_new_sno/</loc>
-    <lastmod>2023-10-23T22:01:20+02:00</lastmod>
   </url><url>
     <loc>http://rhacm-ws.nomiras.com/03_governance/</loc>
     <lastmod>2023-10-23T22:11:56+02:00</lastmod>
@@ -24,6 +18,13 @@
     <lastmod>2023-10-23T22:16:31+02:00</lastmod>
   </url><url>
     <loc>http://rhacm-ws.nomiras.com/06_appendix/</loc>
+    <lastmod>2023-10-24T20:43:49+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/01_cluster_lifecycle/01_new_cluster/</loc>
+    <lastmod>2023-10-23T22:01:13+02:00</lastmod>
+  </url><url>
+    <loc>http://rhacm-ws.nomiras.com/01_cluster_lifecycle/02_new_sno/</loc>
+    <lastmod>2023-10-23T22:01:20+02:00</lastmod>
   </url><url>
     <loc>http://rhacm-ws.nomiras.com/02_application_lifecycle/01_create_app/</loc>
     <lastmod>2023-10-23T22:03:10+02:00</lastmod>
@@ -46,8 +47,11 @@
     <loc>http://rhacm-ws.nomiras.com/04_observability/02_grafana_integration/</loc>
     <lastmod>2023-10-23T22:16:31+02:00</lastmod>
   </url><url>
+    <loc>http://rhacm-ws.nomiras.com/06_appendix/01_import_kubernetes_cluster/</loc>
+    <lastmod>2023-10-24T20:43:49+02:00</lastmod>
+  </url><url>
     <loc>http://rhacm-ws.nomiras.com/</loc>
-    <lastmod>2023-10-23T22:16:31+02:00</lastmod>
+    <lastmod>2023-10-24T20:43:49+02:00</lastmod>
   </url><url>
     <loc>http://rhacm-ws.nomiras.com/04_observability/01_create_s3_bucket/</loc>
     <lastmod>2023-10-23T22:13:35+02:00</lastmod>

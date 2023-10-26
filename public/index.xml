@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RHACM Workshop</title>
+    <title>RHACM on RHACM Workshop</title>
     <link>http://rhacm-ws.nomiras.com/</link>
-    <description>Recent content on RHACM Workshop</description>
+    <description>Recent content in RHACM on RHACM Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Oct 2023 22:16:31 +0200</lastBuildDate><atom:link href="http://rhacm-ws.nomiras.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Oct 2023 20:43:49 +0200</lastBuildDate><atom:link href="http://rhacm-ws.nomiras.com/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

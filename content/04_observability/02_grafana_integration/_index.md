@@ -1,5 +1,5 @@
 ---
-title: "Grafana_integration"
+title: "Grafana Integration"
 date: 2023-10-23T22:16:31+02:00
 draft: false
 weight: 402
@@ -80,4 +80,4 @@ the API reference.
 ** Please note:** it will take a few minutes for the metrics to become visible on the
 dashboard.
 
-![Grafana Cluster](/401_1.png)
+![Grafana Cluster](/images/401_1.png)

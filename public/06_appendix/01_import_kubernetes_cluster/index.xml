@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Import Kubernetes on RHACM Workshop</title>
+    <link>http://rhacm-ws.nomiras.com/06_appendix/01_import_kubernetes_cluster/</link>
+    <description>Recent content in Import Kubernetes on RHACM Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Oct 2023 20:43:49 +0200</lastBuildDate><atom:link href="http://rhacm-ws.nomiras.com/06_appendix/01_import_kubernetes_cluster/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

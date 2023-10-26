@@ -39,35 +39,20 @@ remediation mode they support:
 
 |Policy Controller|Purpose|Enforce or Inform|
 |-----------------|-------|-----------------|
-|Configuration|Used to configure any Kubernetes resource across
-your clusters. Where these resources are created or
-configured is determined by the namespaces you
-include (or exclude) in the policy.|Both|
-|Certificate|Used to detect certificates that are close to expiring.
-You can configure the certificate policy controller by
-updating the minimum duration parameter in your
-controller policy. When a certificate expires in less
-than the minimum duration, the policy becomes
-noncompliant. Certificates are identified from secrets
-in the included namespaces.|Inform|
-|Identity and Access|Management (IAM)The IAM policy controller monitors for the desired
-maximum number of users with a particular cluster
-role (i.e. ClusterRole) in your cluster.|Inform|
+|Configuration|Used to configure any Kubernetes resource across your clusters. Where these resources are created or configured is determined by the namespaces you include (or exclude) in the policy.|Both|
+|Certificate|Used to detect certificates that are close to expiring. You can configure the certificate policy controller by updating the minimum duration parameter in our controller policy. When a certificate expires in less than the minimum duration, the policy becomes noncompliant. Certificates are identified from secrets in the ncluded namespaces.|Inform|
+|Identity and Access|Management (IAM)The IAM policy controller monitors for the desired maximum number of users with a particular cluster role (i.e. ClusterRole) in our cluster.|Inform|
 |-------------------|-------------|----------------|
 
 
 You need to create three different resources in order to implement the policy controllers:
 |Resource|Function|
 |--------|--------|
-|Policy|The Policy defines what you actually want to check and possibly configure (with
-enforce). Policies include a policy-template which defines a list of
-objectDefinitions. The policy also determines the namespaces it is applied to, as
-well as the remediation actions it takes.|
-|PlacementRule|Identifies a list of managed clusters that are targeted when using this
-PlacementRule.|
+|Policy|The Policy defines what you actually want to check and possibly configure (with enforce). Policies include a policy-template which defines a list of objectDefinitions. The policy also determines the namespaces it is applied to, as well as the remediation actions it takes.|
+|PlacementRule|Identifies a list of managed clusters that are targeted when using this PlacementRule.|
 |PlacementBinding|Connect the policy to the PlacementRule.|
 
-![Git Hub Policy Sets](/202_27.png)
+![Git Hub Policy Sets](/images/202_27.png)
 
 You can see most of these components running in the hub cluster in the diagram below.
 RHACM uses all of these to determine which managed clusters and namespaces the policies
@@ -77,7 +62,7 @@ Fortunately, the RHACM console provides an easy way to start creating basic poli
 shown below. In this example, you can see that when you change values for elements in the
 RHACM console, the YAML content is updated.
 
-![Create Policy Sets](/202_28.png)
+![Create Policy Sets](/images/202_28.png)
 
 This is a complex and emerging/evolving topic, and this course is only providing an overview.
 Please consult the GRC product documentation for more details on any of these policy
@@ -86,7 +71,7 @@ We’ll go through a simple example, and create a policy in the default namespac
 For this, we’ll need a little setup:
 Navigate to Clusters and access the ClusterSets tab.
 
-![Cluster Sets](/202_29.png)
+![Cluster Sets](/images/202_29.png)
 
 This is a complex and emerging/evolving topic, and this course is only providing an overview.
 Please consult the GRC product documentation for more details on any of these policy
@@ -95,16 +80,16 @@ We’ll go through a simple example, and create a policy in the default namespac
 For this, we’ll need a little setup:
 Navigate to Clusters and access the ClusterSets tab.
 
-![Cluster Sets](/202_30.png)
+![Cluster Sets](/images/202_30.png)
 
 Click on the 3-dots button on the right, and then on Edit namespaces bindings and add the
 default namespace.
 
-![Namespace Bindings](/202_31.png)
+![Namespace Bindings](/images/202_31.png)
 
 Navigate to the Governance screen and click create policy.
 
-![Governance](/202_32.png)
+![Governance](/images/202_32.png)
 
 Build a policy with the following information:
 
@@ -122,7 +107,7 @@ Select global as the clusterSet.
 
 Leave everything else as default and click NEXT.
 
-![Create Policy Review](/202_33.png)
+![Create Policy Review](/images/202_33.png)
 
 As you can see in the Review page, this policy will be applied to every cluster in the global
 ClusterSet, and it will look for expired certificates in them. If there’s a certificate that is set to

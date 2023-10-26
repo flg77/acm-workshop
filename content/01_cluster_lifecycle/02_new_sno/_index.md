@@ -2,7 +2,7 @@
 title: "New Single Node"
 date: 2023-10-23T22:01:20+02:00
 draft: false
-weight: 2
+weight: 11
 ---
 # Creating a Single Node Cluster (SNO) in AWS 
 
@@ -32,18 +32,18 @@ Please note that the deployment might still fail, if so please retry at differen
 
 Click on Worker Pool 1 and change the Node count to 0
 
-![Node Pool 0](/101_6.png)
+![Node Pool 0](/images/101_6.png)
 
 
 Proceed with everything else as is and while at final step, before proceeding turn YAML: ON
 
-![Review config](/101_7.png)
+![Review config](/images/101_7.png)
 
 Click on “install-config” in the YAML window pane and change the master replica number to 1 (will likely be 3).  Double check that the worker replica is 0.
 
-![Check yaml](/101_8.png)
+![Check yaml](/images/101_8.png)
 
-![SNO creation](/101_9.png)
+![SNO creation](/images/101_9.png)
 
 
 

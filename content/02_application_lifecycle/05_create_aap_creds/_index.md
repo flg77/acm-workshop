@@ -22,4 +22,4 @@ previous screen if not check the ROUTES on your HUB Cluster
 For Ansible Tower token enter the admin user token you generated earlier
 In order to save, click NEXT and ADD. You’ll be redirected to the Credentials page.
 
-![AAP Creads ACM](/202_24.png)
+![AAP Creads ACM](/images/202_24.png)

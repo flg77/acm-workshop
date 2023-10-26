@@ -35,7 +35,7 @@ SAVE the application. Give this a few minutes. The application will complete and
 application topology view you will see the Ansible prehook, and you can infer that it’s a
 ServiceNow change request creation.
 
-![Book Import App](/202_26.png)
+![Book Import App](/images/202_26.png)
 
 Would you like to learn more about the ACM - Ansible integration? Please visit the
 official documentation for RHACM located here.

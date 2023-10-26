@@ -1,5 +1,5 @@
 ---
-title: "Deploy_servicenow_dev"
+title: "Deploy a Service Now Developer Instance"
 date: 2023-10-23T22:07:50+02:00
 draft: false
 weight: 203
@@ -21,13 +21,13 @@ will take advantage of this within the application lifecycle engine.
 To deploy your own instance of ServiceNow, please visit https://developer.servicenow.com
 Select **Sign up and Start Building**
 
-![SNOW Portal](/202_17.png)
+![SNOW Portal](/images/202_17.png)
 
 After signing up and requesting your developer ServiceNow instance (it may look like this
 You can click on the third option, Developer Program, and then on Start Building
 👇)
 
-![SNOW Welcome Msg](/202_18.png)
+![SNOW Welcome Msg](/images/202_18.png)
 
 
 
@@ -76,7 +76,7 @@ snow_username: '{{ SNOW_USERNAME }}'
 - **SAVE** this new credential type
 
 
-![SNOW Welcome Msg](/202_19.png)
+![SNOW Welcome Msg](/images/202_19.png)
 
 Add the ServiceNow Credentials
 
@@ -93,7 +93,7 @@ Navigate to --> **Resources → Credentials**.
 
 --> Then **SAVE**.
 
-![Save AAP Snow creds](/202_20.png)
+![Save AAP Snow creds](/images/202_20.png)
 
 ### Create an Ansible Project
 
@@ -108,7 +108,7 @@ snow-create-change-record in the NAME field
 ● Click SAVE
 
 
-![AAP Projects](/202_21.png)
+![AAP Projects](/images/202_21.png)
 
 
 ### Create an Ansible Job Template
@@ -130,14 +130,14 @@ Credentials Click SELECT
 Change Request in ServiceNow
 
 
-![AAP Job Template](/202_22.png)
+![AAP Job Template](/images/202_22.png)
 
 To verify all was configured properly click the Launch Button.
 Click NEXT, NEXT and LAUNCH.
 Verify that the job ran successfully by looking at the output:
 
-![AAP Job Template](/202_23.png)
+![AAP Job Template](/images/202_23.png)
 
 You can also look in your ServiceNow instance.
 
-![Verify in SNOW instance](/202_24.png)
+![Verify in SNOW instance](/images/202_24.png)

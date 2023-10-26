@@ -1,9 +1,9 @@
-+++
-title = "Create a new cluster"
-date = 2023-10-23T22:01:13+02:00
-draft = false
-weight = 1
-+++
+---
+title: "Create a new cluster"
+date: 2023-10-23T22:01:13+02:00
+draft: false
+weight: 10
+---
 
 # Cluster Lifecycle (Cluster Lifecycle Management use case)
 
@@ -13,7 +13,7 @@ In the 2nd email you received from the RHDP system, it included AWS credentials,
 
 You will need to provide connection details
 
-![No Credentials](/101_1.png)
+![No Credentials](/images/101_1.png)
 
 **Credential Type:** Choose Amazon Web Services and then, Amazon Web Services again
 
@@ -41,7 +41,7 @@ Click **NEXT**
 
 Please refer to Creating a cloud connection for Amazon Web Services for more information on how to complete the step.
 
-![New Credentials AWS](/101_2.png)
+![New Credentials AWS](/images/101_2.png)
 
 ### Create a new OpenShift cluster in AWS
 
@@ -78,11 +78,11 @@ zone, we have very limited amount of elastic IP addresses in these accounts.
 Leave everything else as is(default) and then click NEXT on the other screens or select 7 -
 Review and create on the menu and then click CREATE
 
-![Create Cluster](/101_4.png)
+![Create Cluster](/images/101_4.png)
 
 In about 45 minutes this new cluster will be ready to go!
 
-![Provisioning Finished](/101_5.png)
+![Provisioning Finished](/images/101_5.png)
 
 If you choose an earlier version of OpenShift, you will also have the option to upgrade
 OpenShift if you like. This will also take some time.

@@ -12,20 +12,20 @@
     <title>Create a new cluster :: RHACM Workshop</title>
 
     
-    <link href="/css/nucleus.css?1698346478" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1698346478" rel="stylesheet">
-    <link href="/css/hybrid.css?1698346478" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1698346478" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1698346478" rel="stylesheet">
-    <link href="/css/auto-complete.css?1698346478" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1698346478" rel="stylesheet">
-    <link href="/css/theme.css?1698346478" rel="stylesheet">
-    <link href="/css/tabs.css?1698346478" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1698346478" rel="stylesheet">
+    <link href="/css/nucleus.css?1698349223" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1698349223" rel="stylesheet">
+    <link href="/css/hybrid.css?1698349223" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1698349223" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1698349223" rel="stylesheet">
+    <link href="/css/auto-complete.css?1698349223" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1698349223" rel="stylesheet">
+    <link href="/css/theme.css?1698349223" rel="stylesheet">
+    <link href="/css/tabs.css?1698349223" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1698349223" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1698346478"></script>
+    <script src="/js/jquery-3.3.1.min.js?1698349223"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -43,7 +43,7 @@
   <div id="header-wrapper">
     <div id="header">
       <a id="logo" href="http://rhacm-ws.nomiras.com/">
-	  <img src="/static/_Logo-Red_Hat-Adv_Cluster_Management_For_Kube-A-Black-RGB.png">
+	  <img src="logo.png">
 </a>
 
 
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1698346478"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1698346478"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1698349223"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1698349223"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/rhacm-ws.nomiras.com\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1698346478"></script>
+<script type="text/javascript" src="/js/search.js?1698349223"></script>
 
     
   </div>
@@ -118,6 +118,32 @@
  
   
     
+    <li data-nav-id="/01_cluster_lifecycle/03_hosted_control_plane/" title="Create Hosted Control Plane" class="dd-item
+        
+        
+        
+        ">
+      <a href="/01_cluster_lifecycle/03_hosted_control_plane/">
+          Create Hosted Control Plane
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
     <li data-nav-id="/01_cluster_lifecycle/01_new_cluster/" title="Create a new cluster" class="dd-item
         
         active
@@ -151,32 +177,6 @@
         ">
       <a href="/01_cluster_lifecycle/02_new_sno/">
           New Single Node
-          
-      </a>
-      
-      
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/01_cluster_lifecycle/03_hosted_control_plane/" title="Create Hosted Control Plane" class="dd-item
-        
-        
-        
-        ">
-      <a href="/01_cluster_lifecycle/03_hosted_control_plane/">
-          Create Hosted Control Plane
           
       </a>
       
@@ -556,6 +556,44 @@
       </a>
       
       
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/06_appendix/01_import_kubernetes_cluster/" title="Import Kubernetes" class="dd-item
+        
+        
+        
+        ">
+      <a href="/06_appendix/01_import_kubernetes_cluster/">
+          Import Kubernetes
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
     </li>
   
  
@@ -609,7 +647,7 @@
             
           
           
-            <a href='/'>RHACM Workshop</a> > <a href='/01_cluster_lifecycle/'>Cluster Lifecycle</a> > Create a new cluster
+            <a href='/'>RHACM</a> > <a href='/01_cluster_lifecycle/'>Cluster Lifecycle</a> > Create a new cluster
           
         
           
@@ -659,7 +697,7 @@
 <h4 id="at-a-high-level-cluster-lifecycle-management-is-about-creating-upgrading-and-destroying-and-importing-clusters-in-a-multi-cloud-environment">At a high level Cluster Lifecycle management is about creating, upgrading, and destroying and importing clusters in a multi cloud environment.</h4>
 <p>In the 2nd email you received from the RHDP system, it included AWS credentials, Access Key ID, Secret Access Key, and the Base DNS Domain.  In order to create a new OpenShift cluster in the AWS cloud we will need these keys to create a Provider Connection. On the left bar, select Credentials and then select Add Credential.</p>
 <p>You will need to provide connection details</p>
-<p><img src="/101_1.png" alt="No Credentials"></p>
+<p><img src="/images/101_1.png" alt="No Credentials"></p>
 <p><strong>Credential Type:</strong> Choose Amazon Web Services and then, Amazon Web Services again</p>
 <p><strong>Credential Name:</strong>  aws</p>
 <p><strong>Namespace:</strong> open-cluster-management</p>
@@ -673,7 +711,7 @@
 <p>Click <strong>NEXT</strong></p>
 <p><strong>Verify the information</strong> and click <strong>ADD</strong></p>
 <p>Please refer to Creating a cloud connection for Amazon Web Services for more information on how to complete the step.</p>
-<p><img src="/101_2.png" alt="New Credentials AWS"></p>
+<p><img src="/images/101_2.png" alt="New Credentials AWS"></p>
 <h3 id="create-a-new-openshift-cluster-in-aws">Create a new OpenShift cluster in AWS</h3>
 <p>From the Clusters page, select Create Cluster
 Select Amazon Web services and then Standalone.
@@ -773,6 +811,25 @@ OpenShift if you like. This will also take some time.</p>
             
                 
                     
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -804,22 +861,6 @@ OpenShift if you like. This will also take some time.</p>
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -837,22 +878,6 @@ OpenShift if you like. This will also take some time.</p>
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -934,24 +959,6 @@ OpenShift if you like. This will also take some time.</p>
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
                         
             
             
@@ -1002,6 +1009,40 @@ OpenShift if you like. This will also take some time.</p>
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -1031,8 +1072,26 @@ OpenShift if you like. This will also take some time.</p>
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -1046,7 +1105,7 @@ OpenShift if you like. This will also take some time.</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/01_cluster_lifecycle/" title="Cluster Lifecycle"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/01_cluster_lifecycle/03_hosted_control_plane/" title="Create Hosted Control Plane"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/01_cluster_lifecycle/02_new_sno/" title="New Single Node" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1059,19 +1118,19 @@ OpenShift if you like. This will also take some time.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1698346478"></script>
-    <script src="/js/perfect-scrollbar.min.js?1698346478"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1698346478"></script>
-    <script src="/js/jquery.sticky.js?1698346478"></script>
-    <script src="/js/featherlight.min.js?1698346478"></script>
-    <script src="/js/highlight.pack.js?1698346478"></script>
+    <script src="/js/clipboard.min.js?1698349223"></script>
+    <script src="/js/perfect-scrollbar.min.js?1698349223"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1698349223"></script>
+    <script src="/js/jquery.sticky.js?1698349223"></script>
+    <script src="/js/featherlight.min.js?1698349223"></script>
+    <script src="/js/highlight.pack.js?1698349223"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1698346478"></script>
-    <script src="/js/learn.js?1698346478"></script>
-    <script src="/js/hugo-learn.js?1698346478"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1698349223"></script>
+    <script src="/js/learn.js?1698349223"></script>
+    <script src="/js/hugo-learn.js?1698349223"></script>
     
         
-            <script src="/mermaid/mermaid.js?1698346478"></script>
+            <script src="/mermaid/mermaid.js?1698349223"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
